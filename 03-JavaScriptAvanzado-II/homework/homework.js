@@ -24,6 +24,7 @@ const nuevoContador = counter();
 console.log(nuevoContador());
 console.log(nuevoContador());
 console.log(nuevoContador());
+console.log(nuevoContador());
 
 /* Ejercicio 2
 Tu tarea aquí es lograr, mediante un closure, que cacheFunction actúe como una memoria caché para el callback 
