@@ -45,24 +45,24 @@ function decirNombre(saludo) {
 /*formas de enlazar una funcion a un objeto para que sea un metodo de ese objeto */
 
 objParaBindear.añadiendoMetodo = decirNombre; //* dot-notation
-console.log(objParaBindear.añadiendoMetodo("hola"));
+// console.log(objParaBindear.añadiendoMetodo("hola"));
 
 //                                     funcion.bind(objABindear)
 const instanciaDeObjYFuncionBind = decirNombre.bind(objParaBindear2);
-console.log(instanciaDeObjYFuncionBind("Hello"));
-console.log(objParaBindear2);
-console.log(instanciaDeObjYFuncionBind);
+// console.log(instanciaDeObjYFuncionBind("Hello"));
+// console.log(objParaBindear2);
+// console.log(instanciaDeObjYFuncionBind);
 
 //* CALL
 //                                     funcion.call(objABindear, param1,param2...)
 const instanciaDeObjYFuncionCall = decirNombre.call(objParaBindear2, "Hi"); //el call, bindea y ejecuta
-console.log(instanciaDeObjYFuncionCall);
+// console.log(instanciaDeObjYFuncionCall);
 
 //* APPLY
 //                                                   el APPLY recibe todos los parametros dentro de un mismo array
 //                                     funcion.apply(objABindear, [param1,param2...])
 const instanciaDeObjYFuncionApply = decirNombre.apply(objParaBindear3, ["Hi"]); //el call, bindea y ejecuta
-console.log(instanciaDeObjYFuncionCall);
+// console.log(instanciaDeObjYFuncionCall);
 
 //*extra bind   la funcionalidad de esto es que una funcion se binde(enlace) a un objeto.. de esa forma es un metodo
 
@@ -72,5 +72,11 @@ function sumando(a, b) {
 //NO enlazo la funcion a un objeto
 //pero uso el BIND para pasar params en partes(etapas)
 const bindeando = sumando.bind(null, 3);
-console.log(bindeando(2));
-console.log(bindeando(8));
+// console.log(bindeando(2));
+// console.log(bindeando(8));
+
+const entradasVendidas = [
+	{ nombre: "Harry potter", horario: 23 },
+	{ nombre: "300", horario: 6 },
+	{ nombre: "El hobbit", horario: 7 }
+];
